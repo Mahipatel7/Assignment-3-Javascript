@@ -1,0 +1,161 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('images/2.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    color: #000; /* Changed to black */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); 
+    font-weight: bold; /* Make bold */
+}
+h2{
+    color: #ff0000; /* Changed to black */
+    font-size: 1em;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
+    font-weight: bold; /* Make bold */
+}
+
+#input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background: rgba(0, 0, 0, 0.9); /* Black background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#todo-input {
+    width: 300px;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    color: #000; 
+    font-weight: bold; /* Make bold */
+}
+
+#add-button {
+    padding: 15px 25px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold; /* Make bold */
+}
+
+#add-button:hover {
+    background-color: #218838;
+}
+
+.list-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px; 
+    margin-top: 20px;
+}
+
+.list-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.list-section h2 {
+    margin-bottom: 10px;
+    color: #000000; /* White text for headings */
+    font-weight: bold; /* Make headings bold */
+}
+
+#todo-list,
+#completed-list,
+#deleted-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background: #000; /* Black background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff; 
+}
+
+#todo-list {
+    margin-left: 20px; /* Adjust margin to center the lists */
+    margin-right: 20px;
+}
+
+#completed-list {
+    margin-left: auto; /* Pushes this list to the right */
+}
+
+#deleted-list {
+    margin-right: auto; /* Pushes this list to the left */
+}
+
+.list li {
+    background: #000; /* Black background */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold; /* Make bold */
+}
+
+.list li.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.delete-button {
+    background: #ff0000; 
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 1;
+    transition: background-color 0.3s;
+    font-weight: bold; /* Make bold */
+}
+
+.delete-button:hover {
+    background: #cc0000; /* Darker red on hover */
+}
